@@ -84,7 +84,7 @@ function DmGetby_av(av,page){
 		}
 	}
 	window.avcode=av;
-	xmlhttp.open("GET","/danmu.php?f=gav&av="+av+'&page='+page,true);
+	xmlhttp.open("GET","http://api.b.catofes.com/danmu.php?f=gav&av="+av+'&page='+page,true);
 	xmlhttp.send();
 }
 
@@ -119,7 +119,7 @@ function DmGetby_spid(spid){
 			document.getElementsByTagName('head')[0].appendChild(script);
 		}
 	}
-	xmlhttp.open("GET","/danmu.php?f=spv&id="+spid,true);
+	xmlhttp.open("GET","http://api.b.catofes.com/danmu.php?f=spv&id="+spid,true);
 	xmlhttp.send();
 }
 
@@ -168,9 +168,9 @@ function DmSearchby_name(name,num){
 		}
 	}
 	if(!window.thename)
-	  xmlhttp.open("GET","/danmu.php?f=search&name="+encodeURI(name)+"&num="+num+"&page="+window.pageid,true);
+	  xmlhttp.open("GET","api.b.catofes.com/danmu.php?f=search&name="+encodeURI(name)+"&num="+num+"&page="+window.pageid,true);
 	else
-	  xmlhttp.open("GET","/danmu.php?f=search&name="+encodeURI(window.thename)+"&num=&page="+window.pageid,true);
+	  xmlhttp.open("GET","api.b.catofes.com/danmu.php?f=search&name="+encodeURI(window.thename)+"&num=&page="+window.pageid,true);
 	xmlhttp.send();
 
 }
@@ -189,7 +189,7 @@ function DmGetby_name(name){
 			document.getElementsByTagName('head')[0].appendChild(script);
 		}   
 	}   
-	xmlhttp.open("GET","/danmu.php?f=sps&name="+name,true);
+	xmlhttp.open("GET","api.b.catofes.com/danmu.php?f=sps&name="+name,true);
 	xmlhttp.send();
 
 }
