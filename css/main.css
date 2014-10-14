@@ -1,0 +1,145 @@
+body {
+	background-color: #E3E3E3;
+}
+
+.container {
+	width: 80%;
+	max-width: 800px;
+	min-width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 60px;
+}
+
+.user {
+	cursor: default;
+	background: rgba(255,255,255,0.7);
+	display: inline-block;
+	padding: 12px;
+	transition: all ease 0.05s;
+	margin-right: 40px;
+}
+
+.user:hover {
+	background: rgba(255,255,255,0.9);
+}
+
+.user:active {
+	-webkit-transform: scale(0.96);
+	-moz-transform: scale(0.96);
+	-o-transform: scale(0.96);
+	-ms-transform: scale(0.96);
+	transform: scale(0.96);
+}
+
+.user img{
+	display: inline-block;
+	vertical-align: middle;
+	width: 100px;
+	margin-right: 40px;
+}
+
+.user hgroup {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 20px;
+}
+
+.user hgroup h2 {
+	font-family: 'Dancing Script', cursive;
+}
+
+.user hgroup h3 {
+	font-family: 'Open Sans', sans-serif;
+}
+
+#about {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 32px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.line {
+	height: 2px;
+	border-top: 2px solid #ccc;
+	text-align: center;
+}
+
+.container .main {
+	line-height: 200%;
+}
+
+.container .main h1 {
+	font-size: 26px;
+	text-transform: uppercase;
+	border-left: 4px solid #00CCFF;
+	padding-left: 1em;
+	font-family: 'Poiret One', cursive;
+}
+
+.container .main p {
+	font-family: 'Open Sans', sans-serif;
+	padding-left: 1.5em;
+}
+
+#link {
+	display: inline-block;
+	line-height: 200%;
+	width: 100%;
+	padding-left:  0.7em;
+	margin-top: -20px;
+	font-size: 20px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#link li {
+	list-style-type: none;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+#link li:first-child::before {
+	content: " ";
+}
+
+#link li::before {
+	content: " / ";
+	color: #ccc;
+}
+
+#link a {
+	margin: 20px;
+	display: inline-block;
+	text-decoration: none;
+	color: #000000;
+	padding: 1px 15px;
+}
+
+#link a:hover, #link a.current:hover{
+	color: #ffffff;
+	background: #408ad2;
+}
+
+#link a:active {
+	-webkit-transform: scale(0.96);
+	-moz-transform: scale(0.96);
+	-o-transform: scale(0.96);
+	-ms-transform: scale(0.96);
+	transform: scale(0.96);
+}
+
+a {
+	color: black;
+	text-decoration: none;
+	font-weight: 300;
+}
+
+a:visited {
+	color: black;
+}
+
+a:hover {
+	color: #CC6666;
+}
